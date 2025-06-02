@@ -1,5 +1,5 @@
 {
-  "name": "@project/src",
+  "name": "@project/root",
   "version": "1.0.0",
   "description": "Monorepo starter for platfrom-gcp-tanstack-start",
   "main": "index.js",
@@ -17,8 +17,22 @@
   },
   "homepage": "https://github.com/cloudvoyant/platform-gcp-tanstack-start#readme",
   "workspaces": [
-    "apps",
-    "features",
-    "libs"
-  ]
+    "apps/*",
+    "features/*",
+    "libs/*"
+  ],
+  "dependencies": {
+    "@tanstack/react-router": "^1.120.13",
+    "@tanstack/react-start": "^1.120.13",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "vinxi": "^0.5.6"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
+    "@vitejs/plugin-react": "^4.5.0",
+    "typescript": "^5.8.3",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
 }
